@@ -1,0 +1,36 @@
+header{
+
+    background-color:#5496BF;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+h1{
+
+    color: white;
+}
+
+hr{
+
+    color: black;
+}
+body{
+
+    background-color: #F2F2F2;
+}
+button{
+
+    background-color: #BF2424;
+    color: white;
+    padding: 5px;
+}
+
+form .input{
+
+     width: 40em;
+    height: 2em;
+    border-radius: 5px;
+    border: #FFFFFF 1px solid;
+
+}

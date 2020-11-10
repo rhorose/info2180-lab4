@@ -63,6 +63,13 @@ $superheroes = [
   ], 
 ];
 
+
+
+
+echo $_GET["searching"];
+// filter_input[INPUT_GET,"searching", FILTER_SANITIZE];
+
+
 ?>
 
 <ul>

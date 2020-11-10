@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheros</title>
+    <link rel= "stylesheet" href="styles.css">
+    <script scr="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<header> 
+    <h1> Avengers Character Search</h1>
+</header>
+<body>
+    <main>
+         <form id="search"  action= "superheroes.php" method="GET">
+             <label class= "labelName" >Search by Full Name or Alias</label> <br>
+             <input placeholder="e.g. Captain America or Steve Rogers" type="text" id= "searching" name="ask" size="50">
+             <button id="theBtn" class= "btn">Search</button>
+         </form>
+
+         <div>
+             <h2>RESULT</h2>
+             <hr>
+             <div id = "results">
+
+             </div>
+         </div>
+    </main>     
+</body>
+</html>
