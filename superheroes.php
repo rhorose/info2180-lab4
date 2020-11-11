@@ -65,15 +65,28 @@ $superheroes = [
 
 
 
-
 echo $_GET["searching"];
-// filter_input[INPUT_GET,"searching", FILTER_SANITIZE];
+
+filter_input[INPUT_GET,"searching", FILTER_SANITIZE];
 
 
 ?>
 
+
+
+
 <ul>
-<?php foreach ($superheroes as $superhero): ?>
+
+<?php foreach ($superheroes as $superhero):
+if(strtolower($searching))== strtolower($superhero['name'])|| strtolower($searching)==strtolower($superhero['alias'])){
+    $showHero= $superhero;
+break;
+}
+endforeach;
+ 
+echo json_encode($showHero);  
+    ?>
   <li><?= $superhero['alias']; ?></li>
 <?php endforeach; ?>
 </ul>
+
